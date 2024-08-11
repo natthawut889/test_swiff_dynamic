@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.app-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #6eda78, #ffa200);
+  
+
+  .left-content {
+    font-size: 18px;
+  }
+
+  .right-content {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.background-gradient {
+  background: linear-gradient(to right, #6eda78, #ffa200);
+  width: 100%;
+  height: 100vh;
+}
+
+.language-switcher {
+  position: absolute;
+  top: 10px; 
+  right: 10px; 
+}
+
+.box {
+  width: 300px;
+  height: 150px;
+  background-color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  border-radius: 5px;
+}
+
+.boxUpDown {
+  position: relative;
+  width: 600px; 
+  height: 150px; 
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  border-radius: 10px;
+  border: none;
+  &:hover {
+    background-color: #ffa200;
+  }
+  &:active {
+    background-color: #6eda78;
+  }
+  .center-box {
+    width: 100px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #03d118;
+    color: #ffffff;
+  }
+}
+.boxUpDown .anticon {
+  font-size: 160px;  
+}
+
+.box1 {
+  position: relative;
+  width: 300px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 0 10px 10px 10px;
+  border: none;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #ffa200;
+  }
+  &:active {
+    background-color: #6eda78;
+  }
+  .center-box {
+    width: 100px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #03d118;
+    color: #ffffff;
+  }
+}
+.box1 .anticon {
+  font-size: 160px;  
+}
+
+.box3 {
+  width: 300px; 
+  height: 150px; 
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  border-radius: 10px;
+  margin: 0 5px 5px 5px;
+  &:hover {
+    background-color: #ffa200;
+  }
+  &:active {
+    background-color: #6eda78;
+  }
+}
+
+.box-wrapper {
+  padding: 10px;
+  min-height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shape-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 5px;
+
+  .shape-row {
+    display: flex;
+    gap: 10px;
+  }
+  .shape-row2 {
+    display: flex;
+    /* gap: 10px; */
+  }
+
+  .shape {
+    width: 150px;
+    height: 100px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+  }
+
+  .shape2 {
+    width: 150px;
+    height: 100px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+  }
+
+  .triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid gray;
+  }
+
+  .triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid gray;
+  }
+
+  .triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-right: 100px solid gray;
+  }
+
+  .triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 100px solid gray;
+  }
+
+  .square {
+    width: 80px;
+    height: 80px;
+    background: gray;
+  }
+
+  .rectangle {
+    width: 100px;
+    height: 60px;
+    background: gray;
+  }
+
+  .circle {
+    width: 100px;
+    height: 100px;
+    background: gray;
+    border-radius: 50%;
+  }
+
+  .ellipse {
+    width: 170px;
+    height: 100px;
+    background: gray;
+    border-radius: 50% / 50%;
+  }
+
+  .trapezoid {
+    width: 100px;
+    height: 0;
+    border-bottom: 60px solid gray;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+  }
+
+  .parallelogram {
+    width: 100px;
+    height: 60px;
+    background: gray;
+    transform: skew(20deg);
+  }
+}
